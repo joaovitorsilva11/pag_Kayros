@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,44 +7,90 @@
   <title>Suporte</title>
   <!-- Adicione o link para o Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="favicon.png" type="image/png">
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      font-size: 12px;
-      background-color: #000;
+      transition: background-color 0.3s ease;
+      margin: 0;
+      padding: 0;
     }
 
-    th, td {
-        color: #fff;
-    }
     .textoParaCopiar {
       border: 1px solid #ccc;
       padding: 10px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
     }
 
     .botaoCopiar {
       cursor: pointer;
-      background-color: #1d32b9;
+      background-color: rgb(17, 17, 152);
       color: white;
-      padding: 5px 10px;
+      padding: 10px 20px;
       border: none;
       border-radius: 5px;
-      font-size: 10px;
-      margin-bottom: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
 
     .tabelaContainer {
       text-align: center;
     }
+
+    .inputSelectContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .inputSelectContainer select,
+    .inputSelectContainer input {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .modoNoturnoBotao {
+      margin-left: auto;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 15px 0;
+    }
+
+    .navbar-brand,
+    .navbar-nav a {
+      color: white;
+    }
+
+    .navbar-brand:hover,
+    .navbar-nav a:hover {
+      color: #007bff;
+    }
+    
+    .container {
+      max-width: 1200px;
+    }
+
+    th {
+        color: rgb(17, 17, 152);
+    }
+
   </style>
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="pag_principal.html">← Voltar</a>
+          <button class="btn btn-primary modoNoturnoBotao" onclick="alternarModoNoturno()">Modo Noturno</button>
+        </div>
+    </nav>
+
   <div class="container">
     <div class="row">
-      <!-- Adicione mais blocos de col-md-4 conforme necessário -->
+      <!-- Adicione mais blocos de col-md-6 conforme necessário -->
       <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
@@ -128,11 +175,11 @@ https://www.speedtest.net/pt
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th scope="col">Pagamento Pendente</th>
+              <th scope="col">Pagamento Pendente / Troca de local</th>
               <th scope="col">Ação</th>
             </tr>
           </thead>
@@ -142,12 +189,16 @@ https://www.speedtest.net/pt
               <td class="textoParaCopiar">Identificamos a existência de uma fatura em aberto, resultando no bloqueio parcial da sua conexão. Deseja que eu te instrua a baixar nosso aplicativo para obter a fatura pendente ou que eu transfira seu caso para o Financeiro? </td>
               <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
             </tr>
+            <tr>
+              <td class="textoParaCopiar">Informo que há uma taxa para a mudança de local dos equipamentos. Após a conclusão do serviço, o setor financeiro emitirá o boleto, o qual será enviado em até 7 dias. Gostaria de agendar essa mudança? </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
             <!-- Adicione mais linhas conforme necessário -->
           </tbody>
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -177,7 +228,7 @@ https://www.speedtest.net/pt
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -196,7 +247,7 @@ https://www.speedtest.net/pt
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -223,7 +274,7 @@ https://www.speedtest.net/pt
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -244,7 +295,7 @@ https://www.speedtest.net/pt
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -263,7 +314,7 @@ https://www.speedtest.net/pt
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -288,7 +339,7 @@ Seu usuário e senha será o CPF do titular sem pontos ou traços. Se tiver qual
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-6 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -313,7 +364,7 @@ Estamos enfrentando um problema de infraestrutura que afeta temporariamente noss
         </table>
       </div>
 
-      <div class="col-md-4 tabelaContainer">
+      <div class="col-md-12 tabelaContainer">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -416,6 +467,20 @@ Estamos enfrentando um problema de infraestrutura que afeta temporariamente noss
       // Remover a área de transferência temporária e redefinir a seleção
       document.body.removeChild(areaTransferencia);
       select.selectedIndex = 0; // Define o primeiro item como selecionado
+    }
+
+    function alternarModoNoturno() {
+      var body = document.body;
+      var elementosTexto = document.querySelectorAll(".textoParaCopiar");
+
+      // Alternar a cor de fundo do corpo
+      body.style.backgroundColor = body.style.backgroundColor === "black" ? "white" : "black";
+
+      // Alternar a cor de fundo dos elementos de texto
+      elementosTexto.forEach(function(elemento) {
+        elemento.style.backgroundColor = elemento.style.backgroundColor === "black" ? "white" : "black";
+        elemento.style.color = elemento.style.color === "white" ? "black" : "white";
+      });
     }
   </script>
 

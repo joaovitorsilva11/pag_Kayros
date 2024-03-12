@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte</title>
+  <!-- Adicione o link para o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      transition: background-color 0.3s ease;
+      margin: 0;
+      padding: 0;
+    }
+
+    .textoParaCopiar {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botaoCopiar {
+      cursor: pointer;
+      background-color: rgb(17, 17, 152);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .botaoCopiar:hover {
+        background-color: rgb(7, 7, 122);
+    }
+
+    .tabelaContainer {
+      text-align: center;
+    }
+
+    .inputSelectContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .inputSelectContainer select,
+    .inputSelectContainer input {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .modoNoturnoBotao {
+      margin-left: auto;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 15px 0;
+    }
+
+    .navbar-brand,
+    .navbar-nav a {
+      color: white;
+    }
+
+    .navbar-brand:hover,
+    .navbar-nav a:hover {
+      color: #007bff;
+    }
+    
+    .container {
+      max-width: 1200px;
+    }
+
+    th {
+        color: rgb(17, 17, 152);
+    }
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="pag_principal.html">← Voltar</a>
+          <button class="btn btn-primary modoNoturnoBotao" onclick="alternarModoNoturno()">Modo Noturno</button>
+        </div>
+    </nav>
+
+  <div class="container">
+    <div class="row">
+      <!-- Adicione mais blocos de col-md-6 conforme necessário -->
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Cumprimento</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Bom dia! Suporte Kayrós Link 😃, como posso te ajudar?</td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <tr>
+              <td class="textoParaCopiar">Boa tarde! Suporte Kayrós Link 😃, como posso te ajudar?</td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Reconexão(sinal estável)</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Muita reconexão está acontecendo; nesse sentido, sugerimos trocar a tomada por algumas horas, a fim de eliminar a possibilidade de mau funcionamento devido à tomada</td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-12 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Atendimento</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Por favor, envie um vídeo dos dispositivos de internet para que eu possa acompanhar as luzes dos aparelhos. </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <tr>
+              <td class="textoParaCopiar">Poderia esclarecer em qual dispositivo específico a lentidão é mais evidente: seja no computador, na televisão ou no celular?</td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+            </tr>
+            <tr>
+            <td class="textoParaCopiar">Entendido. Farei algumas modificações nas configurações do roteador, o que resultará na interrupção temporária da conexão. Informarei assim que a conexão estiver restabelecida</td>
+                <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+              </tr>
+              <tr>
+            <td class="textoParaCopiar">Realizei ajustes nos dispositivos. Solicito que proceda com o reinício de todos os aparelhos afetados pela lentidão, incluindo computador, televisão e celular, a fim de avaliar possíveis melhorias.</td>
+                <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+              </tr>
+              <tr>
+                <td class="textoParaCopiar">Poderia desconectar os dispositivos da fonte de energia, aguarde cerca de 30 segundos e, em seguida, reconecte-os, por favor</td>
+                <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+              </tr>
+              <tr>
+                <td class="textoParaCopiar">Solicito que proceda com a realização do teste de velocidade. Para isso, desconecte todos os dispositivos móveis da rede Wi-Fi em sua residência, mantendo apenas um que possua tecnologia 5G. Em seguida, execute o teste e me envie o resultado utilizando o aplicativo Speedtest disponível em: 
+https://www.speedtest.net/pt
+É recomendado que o celular esteja próximo do roteador, com o modo economia desativado, os aplicativos limpos e se for realizar o teste no navegador, deixar somente a página do teste aberta
+                    </td>
+                <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+              </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      
+
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Transferir</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">
+                <select class="form-control">
+                  <option value="opcao1"> </option>
+                  <option value="opcao2">Financeiro</option>
+                  <option value="opcao3">Atendimento</option>
+                  <option value="opcao3">Fidelize</option>
+                </select>
+              </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarSelect(this, 5)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Inatividade</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+                <td class="textoParaCopiar">
+                  <input type="text" class="form-control" placeholder="Número do Cliente">
+                </td>
+                <td><button class="botaoCopiar btn btn-success" onclick="copiarInputTexto(this, 5)">Copiar</button></td>
+              </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">LOS</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Essa luz vermelha significa que esse é um problema de natureza física, ou seja, algo ocorreu na fiação que está impedindo que o sinal chegue até seus aparelhos de internet. Nesse caso, teremos que estar marcando uma visita técnica para o mesmo verificar e normalizar sua rede. A visita ocorrerá em até 48h. Qual o melhor período? Manhã ou tarde?</td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Finalização</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Certo, posso te ajudar em mais alguma questão?</td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <tr>
+              <td class="textoParaCopiar">Estou à disposição! Tenha um ótimo dia! </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+            </tr>
+            <tr>
+              <td class="textoParaCopiar">Estou à disposição! Tenha uma ótima tarde! </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+            </tr>
+            <tr>
+            <td class="textoParaCopiar">Estou à disposição! Tenha um ótimo final de semana!</td>
+                <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Pagamento Pendente / Troca de local</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Identificamos a existência de uma fatura em aberto, resultando no bloqueio parcial da sua conexão. Deseja que eu te instrua a baixar nosso aplicativo para obter a fatura pendente ou que eu transfira seu caso para o Financeiro? </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <tr>
+              <td class="textoParaCopiar">Informo que há uma taxa para a mudança de local dos equipamentos. Após a conclusão do serviço, o setor financeiro emitirá o boleto, o qual será enviado em até 7 dias. Gostaria de agendar essa mudança? </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">TVBox</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Entendi. No caso, tanto o TV Box quanto o IPTV não são dispositivos homologados pela Anatel. Por essa razão, nenhum provedor de internet pode garantir estabilidade de rede para esses aparelhos. Se o travamento ocorre apenas no TV Box, é provável que haja um problema no próprio aparelho ou no servidor associado a ele. Recomendo conectar-se à internet por meio de cabo e entrar em contato com o suporte do TV Box para realizar verificações. Tudo bem?</td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Baixar App</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Você pode baixar nosso aplicativo. Seguem os links para download:
+Para usuários de Android: https://play.google.com/store/apps/details?id=com.kayroslink.app
+Para usuários de iOS: https://apps.apple.com/br/app/kayrós-link/id6449749721
+Além disso, você pode acessar nossa Central do Assinante pelo site:
+https://www.kayroslink.com.br/area-do-cliente/ 
+Seu usuário e senha será o CPF do titular sem pontos ou traços. Se tiver qualquer dúvida durante o processo, pode me chamar
+               </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">SLA</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Prezado Cliente,
+Estamos enfrentando um problema de infraestrutura que afeta temporariamente nossos serviços em sua região. Nossos técnicos estão empenhados em resolver a situação até o final do dia, podendo ocorrer demais interrupções. Atualizações serão disponibilizadas, e nossa equipe de suporte está à disposição.
+                </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <tr>
+              <td class="textoParaCopiar">A volta da conectividade em sua região foi confirmada. Se, porventura, a sua residência ainda não estiver restabelecida, por favor, desligue os dispositivos de rede da tomada por dois minutos e, em seguida, ligue-os novamente. Se, mesmo assim, a rede não for restaurada,me informe por gentileza. Agradecemos pela sua compreensão e paciência.</td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 2)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-12 tabelaContainer">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Fim do Expediente</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Adicione mais linhas conforme necessário -->
+            <tr>
+              <td class="textoParaCopiar">Devido a chegada do fim do meu expediente, estarei transferindo seu caso para a fila do suporte, para que outro colaborador possa auxiliar na resolução do seu problema 
+            </td>
+              <td><button class="botaoCopiar btn btn-success" onclick="copiarTexto(this, 1)">Copiar</button></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Adicione o link para o Bootstrap JS e o jQuery no final do corpo para melhor desempenho -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    function copiarTexto(botao, numeroTexto) {
+      // Encontrar o elemento de texto específico relacionado ao botão clicado
+      var texto = botao.closest("tr").querySelector(".textoParaCopiar");
+
+      // Criar uma área de transferência temporária
+      var areaTransferencia = document.createElement("textarea");
+      areaTransferencia.value = texto.textContent;
+
+      // Adicionar a área de transferência à página
+      document.body.appendChild(areaTransferencia);
+
+      // Selecionar e copiar o texto na área de transferência temporária
+      areaTransferencia.select();
+      document.execCommand("copy");
+
+      // Remover a área de transferência temporária
+      document.body.removeChild(areaTransferencia);
+    }
+
+    function copiarInputTexto(botao, numeroTexto) {
+      // Encontrar o elemento de input específico relacionado ao botão clicado
+      var inputTexto = botao.closest("tr").querySelector("input");
+
+      // Criar uma área de transferência temporária
+      var areaTransferencia = document.createElement("textarea");
+      
+      // Adicionar texto padrão antes e depois do valor do input
+      var textoAntes = "Caro cliente foram realizadas três tentativas de contato telefônico, no número 61 9";
+      var textoDepois = " todas sem sucesso, para que o suporte seja efetivo necessitamos deste acompanhamento de sua parte junto ao setor, entendemos que não esteja conseguindo fazê-lo agora e ficamos disponíveis caso ainda necessite entrar em contato posteriormente, tenha uma boa noite!";
+      var textoCompleto = textoAntes + inputTexto.value + textoDepois;
+
+      areaTransferencia.value = textoCompleto;
+
+      // Adicionar a área de transferência à página
+      document.body.appendChild(areaTransferencia);
+
+      // Selecionar e copiar o texto na área de transferência temporária
+      areaTransferencia.select();
+      document.execCommand("copy");
+
+      // Remover a área de transferência temporária e limpar o input
+      document.body.removeChild(areaTransferencia);
+      inputTexto.value = '';
+    }
+
+    function copiarSelect(botao, numeroTexto) {
+      // Encontrar o elemento de seleção específico relacionado ao botão clicado
+      var select = botao.closest("tr").querySelector("select");
+
+      // Obter o valor selecionado
+      var valorSelecionado = select.options[select.selectedIndex].text;
+
+      // Texto padrão antes e depois do valor selecionado
+      var textoAntes = "Certo! Estou transferindo seu caso para o setor especializado responsável, ";
+      var textoDepois = " (Segunda a Sábado das 8:00 às 18:00, Domingo até 12:00), para que seu problema seja resolvido.";
+
+      // Criar uma área de transferência temporária
+      var areaTransferencia = document.createElement("textarea");
+      areaTransferencia.value = textoAntes + valorSelecionado + textoDepois;
+
+      // Adicionar a área de transferência à página
+      document.body.appendChild(areaTransferencia);
+
+      // Selecionar e copiar o texto na área de transferência temporária
+      areaTransferencia.select();
+      document.execCommand("copy");
+
+      // Remover a área de transferência temporária e redefinir a seleção
+      document.body.removeChild(areaTransferencia);
+      select.selectedIndex = 0; // Define o primeiro item como selecionado
+    }
+
+    function alternarModoNoturno() {
+      var body = document.body;
+      var elementosTexto = document.querySelectorAll(".textoParaCopiar");
+
+      // Alternar a cor de fundo do corpo
+      body.style.backgroundColor = body.style.backgroundColor === "black" ? "white" : "black";
+
+      // Alternar a cor de fundo dos elementos de texto
+      elementosTexto.forEach(function(elemento) {
+        elemento.style.backgroundColor = elemento.style.backgroundColor === "black" ? "white" : "black";
+        elemento.style.color = elemento.style.color === "white" ? "black" : "white";
+      });
+    }
+  </script>
+
+</body>
+</html>

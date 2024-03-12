@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte</title>
+  <!-- Adicione o link para o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card-escolha-periodo {
+      border: none;
+      box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Sombra azul */
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .botaoPeriodo {
+      cursor: pointer;
+      background-color: rgb(17, 17, 152);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botaoPeriodo:hover {
+      background-color: rgb(7, 7, 122); /* Cor semelhante para o hover */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card card-escolha-periodo">
+    <h1 class="card-title">Qual o seu período?</h1>
+    <a href="diurno.html">
+      <button class="botaoPeriodo btn btn-success">Diurno</button>
+    </a>
+    <a href="noturno.html"><button class="botaoPeriodo btn btn-secondary" href="noturno.html">Noturno</button></a>
+    
+  </div>
+
+</body>
+</html>
