@@ -388,7 +388,12 @@ Estamos enfrentando um problema de infraestrutura que afeta temporariamente noss
           </tbody>
         </table>
       </div>
-
+      <div id="blocoDeAnotacoes">
+        <h2>Anotações</h2>
+        <textarea id="anotacoes"></textarea>
+        <button onclick="salvarAnotacoes()">Salvar</button>
+        <button onclick="limparAnotacoes()">Limpar</button>
+      </div>
     </div>
   </div>
 
@@ -482,6 +487,12 @@ Estamos enfrentando um problema de infraestrutura que afeta temporariamente noss
         elemento.style.backgroundColor = elemento.style.backgroundColor === "black" ? "white" : "black";
         elemento.style.color = elemento.style.color === "white" ? "black" : "white";
       });
+    }
+
+    function limparAnotacoes() {
+      document.getElementById('anotacoes').value = '';
+      localStorage.removeItem('anotacoes');
+      alert('Anotações limpas!');
     }
   </script>
 
