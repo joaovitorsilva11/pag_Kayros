@@ -82,7 +82,7 @@
     }
 
     #blocoDeAnotacoes {
-      width: 300px;
+      width: 80%;
       margin: 0 auto;
       text-align: left;
     }
@@ -90,7 +90,8 @@
     textarea {
       width: 100%;
       height: 150px;
-      resize: none; /* Impede que o textarea seja redimensionado pelo usuário */
+      resize: none;
+      margin-bottom: 10px;
     }
 
   </style>
@@ -406,7 +407,8 @@ Estamos enfrentando um problema de infraestrutura que afeta temporariamente noss
       <div id="blocoDeAnotacoes">
         <h2>Anotações</h2>
         <textarea id="anotacoes"></textarea>
-        <button onclick="limparAnotacoes()">Limpar</button>
+        <br>
+        <button onclick="limparAnotacoes()">Limpar Bloco</button>
       </div>
     </div>
   </div>
@@ -505,7 +507,6 @@ Estamos enfrentando um problema de infraestrutura que afeta temporariamente noss
 
     function limparAnotacoes() {
       document.getElementById('anotacoes').value = '';
-      localStorage.removeItem('anotacoes');
       alert('Anotações limpas!');
     }
   </script>
