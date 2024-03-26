@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Técnico</title>
+</head>
+<body>
+    <nav class="navbar bg-white fixed-top">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="logotipo Kayros.png" alt="" width="150">
+            </div>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Suporte</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="pagprincipal.html"> Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Procedimentos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="los.html">LOS</a></li>
+                        <li><a class="dropdown-item" href="los.html">Sinal Alto</a></li>
+                        <li><a class="dropdown-item" href="winmtr.html">WinMTR</a></li>
+                        <li><a class="dropdown-item" href="#">Lentidão</a></li>
+                        <li><a class="dropdown-item" href="#">Roteador Resetado</a></li>
+                        <li><a class="dropdown-item" href="senhacomcamera.html">Troca de senha com câmera</a></li>
+                        <li><a class="dropdown-item" href="#">Criação de senha  provisória</a></li>
+                        <li><a class="dropdown-item" href="#">Criação de Email de rede mesh</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Provionamentos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="provisionamento.html">Kayros</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Jardim 2</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Onitel</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Jaguar</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="vlan.html">VLANs</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="script.html"> Scripts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+<div class="container">
+    <h1 style="justify-content: center;">Diagnóstico de rede – WinMTR</h1>
+    <p>O WinMTR é uma ferramenta de diagnóstico de rede que combina as funcionalidades do
+        traceroute e do ping para fornecer informações detalhadas sobre a qualidade da conexão em
+        uma rede. Funciona enviando pacotes de dados para destinos específicos e registrando o
+        tempo que leva para eles serem respondidos. Ele realiza várias medições ao longo do percurso
+        da rede, ajudando a identificar onde podem estar ocorrendo problemas, como perda de
+        pacotes, latência ou congestionamento, fornecendo dados úteis para diagnosticar e resolver
+        problemas de conectividade. O WinMTR exibe essas informações de maneira amigável,
+        permitindo uma análise mais aprofundada do desempenho da rede.
+    </p>
+    <img src="winmtr.png" alt="">
+    <ol>
+        <li><b>Inserir o Destino:</b>
+            <p>
+                No campo "Host", insira o endereço IP ou o nome de domínio do destino que você
+                deseja testar a conexão.
+            </p>
+        </li>
+        <li><b>Inserir o Destino:</b>
+            <p>
+                Clique no botão "Start". O WinMTR começará a enviar pacotes para o destino
+                especificado e a coletar dados.  
+            </p>
+        </li>
+        <li><b>Analisar os Resultados:</b>
+            <p>
+                Após um tempo de execução adequado, você verá uma tabela com informações
+                detalhadas sobre cada salto na rota para o destino. Isso inclui o endereço IP de cada
+                salto, a porcentagem de perda de pacotes, a latência (ping) e outras estatísticas. 
+            </p>
+        </li>
+        <li><b>Interpretação dos Dados:</b>
+            <p>
+                Observe as colunas para identificar possíveis problemas. Por exemplo, alta latência em
+                um salto específico pode indicar um ponto de congestão ou um problema na rede
+                nesse ponto.
+            </p>        
+        </li>
+        <li><b>Encerrar o Teste:</b>
+            <p>
+                Quando tiver coletado informações suficientes ou desejar interromper o teste, clique
+                em "Stop" para encerrar a coleta de dados. 
+            </p>
+        </li>
+    </ol>
+    <b>Agora utilizando em um exemplo em nossa rede:</b>
+    <img src="winmtr2.png" alt="">
+    <p>Realizei um teste utilizando o WinMTR para o site da UOL. Durante o teste, foram identificados
+        11 direcionamentos, representando o caminho percorrido para acessar esse site específico. Os
+        três primeiros direcionamentos revelaram informações cruciais. O primeiro, identificado pelo
+        IP 192.168.0.1, representa o roteador interno da rede, indicando o início da rota. Em seguida,
+        dois destinos com o endereço de domínio da Kayrós Link sugerem o trânsito pela nossa rede e
+        a passagem por links externos antes de alcançar efetivamente o site da UOL.
+    </p>
+    <p>
+        É importante notar que, durante o teste, foram registrados dados como a porcentagem de
+        perda de pacotes e a latência em cada salto. Estes valores podem indicar possíveis problemas
+        em pontos específicos da rota, como congestionamentos ou falhas de conexão. Como é
+        possível identificar, o número de envios e recebidos são os mesmos, ou seja, não está havendo
+        perca por parte da nossa conexão.
+    </p>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="scrollJs.js"></script>
+</html>

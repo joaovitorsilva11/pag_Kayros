@@ -1,0 +1,15 @@
+body {
+    /*height: 2000px;  Adicionando altura extra para permitir rolar */
+
+
+    .navbar {
+      transition: top 0.3s ease; /* Adiciona uma transição suave à propriedade top */
+    }
+
+
+  }
+
+
+.margin-custom {
+    margin-top: 80px;
+}

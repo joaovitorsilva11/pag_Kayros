@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Técnico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar bg-white fixed-top">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="logotipo Kayros.png" alt="" width="150">
+            </div>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Suporte</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="pagprincipal.html"> Home</a>
+              </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Procedimentos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="los.html">LOS</a></li>
+                        <li><a class="dropdown-item" href="los.html">Sinal Alto</a></li>
+                        <li><a class="dropdown-item" href="winmtr.html">WinMTR</a></li>
+                        <li><a class="dropdown-item" href="#">Lentidão</a></li>
+                        <li><a class="dropdown-item" href="#">Roteador Resetado</a></li>
+                        <li><a class="dropdown-item" href="senhacomcamera.html">Troca de senha com câmera</a></li>
+                        <li><a class="dropdown-item" href="#">Criação de senha  provisória</a></li>
+                        <li><a class="dropdown-item" href="#">Criação de Email de rede mesh</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Provionamentos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="provisionamento.html">Kayros</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Jardim 2</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Onitel</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Jaguar</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="vlan.html">VLANs</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="script.html"> Scripts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    <main>
+        <div class="container d-flex justify-content-center align-items-center flex-column margin-custom">
+           
+
+
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Cumprimento
+                    </button>
+                  </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Bom dia! Suporte Kayrós Link 😃, como posso te ajudar?</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 3)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Boa tarde! Suporte Kayrós Link 😃, como posso te ajudar?</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 4)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Boa noite! Suporte Kayrós Link 😃, como posso te ajudar?</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 4)">Copiar</button></td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Atendimento
+                    </button>
+                  </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Por favor, envie um vídeo dos dispositivos de internet para que eu possa acompanhar as luzes dos aparelhos. </td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Poderia esclarecer em qual dispositivo específico a lentidão é mais evidente: seja no computador, na televisão ou no celular?</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                  <td class="textoParaCopiar">Entendido. Farei algumas modificações nas configurações do roteador, o que resultará na interrupção temporária da conexão. Informarei assim que a conexão estiver restabelecida</td>
+                                      <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                    </tr>
+                                    <tr>
+                                  <td class="textoParaCopiar">Realizei ajustes nos dispositivos. Solicito que proceda com o reinício de todos os aparelhos afetados pela lentidão, incluindo computador, televisão e celular, a fim de avaliar possíveis melhorias.</td>
+                                      <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="textoParaCopiar">Poderia desconectar os dispositivos da fonte de energia, aguarde cerca de 30 segundos e, em seguida, reconecte-os, por favor</td>
+                                      <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="textoParaCopiar">Solicito que proceda com a realização do teste de velocidade. Para isso, desconecte todos os dispositivos móveis da rede Wi-Fi em sua residência, mantendo apenas um que possua tecnologia 5G. Em seguida, execute o teste e me envie o resultado utilizando o aplicativo Speedtest disponível em: 
+https://www.speedtest.net/pt
+É recomendado que o celular esteja próximo do roteador, com o modo economia desativado, os aplicativos limpos e se for realizar o teste no navegador, deixar somente a página do teste aberta
+                                          </td>
+                                      <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                    </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Inatividade / Transferir
+                    </button>
+                  </h2>
+                <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">
+                                        <input type="text" class="form-control" placeholder="Número do Cliente">
+                                    </td>
+                                        <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarInputTexto(this, 5)">Copiar</button></td>
+                                    </tr>
+                                    <tr>
+                                        <tr>
+                                            <td class="textoParaCopiar">
+                                                <select class="form-control">
+                                                    <option value="opcao1"></option>
+                                                    <option value="opcao2">Financeiro</option>
+                                                    <option value="opcao3">Atendimento</option>
+                                                    <option value="opcao3">Fidelize</option>
+                                                </select>
+                                            </td>
+                                        <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarSelect(this, 5)">Copiar</button></td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td class="textoParaCopiar">Vi que o senhor está interessado em contratar nossa internet! Estou transferindo seu caso para o setor especializado responsável, Atendimento (Segunda a Sábado das 8:00 as 18:00, Domingo até às 12:00), para que possa conhecer melhor nossos planos!</td>
+                                        <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                    </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                      LOS
+                    </button>
+                  </h2>
+                <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Essa luz vermelha significa que esse é um problema de natureza física, ou seja, algo ocorreu na fiação que está impedindo que o sinal chegue até seus aparelhos de internet. Nesse caso, teremos que estar marcando uma visita técnica para o mesmo verificar e normalizar sua rede. A visita ocorrerá em até 48h. Qual o melhor período? Manhã ou tarde?</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                      Pagamento Pendente / Troca de Local
+                    </button>
+                  </h2>
+                <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Identificamos a existência de uma fatura em aberto, resultando no bloqueio parcial da sua conexão. Deseja que eu te instrua a baixar nosso aplicativo para obter a fatura pendente ou que eu transfira seu caso para o Financeiro? </td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Informo que há uma taxa para a mudança de local dos equipamentos. Após a conclusão do serviço, o setor financeiro emitirá o boleto, o qual será enviado em até 7 dias. Gostaria de agendar essa mudança? </td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                      Finalização
+                    </button>
+                  </h2>
+                <div id="collapseSix" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Certo, posso te ajudar em mais alguma questão?</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Estou à disposição! Tenha um ótimo dia! </td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Estou à disposição! Tenha uma ótima tarde! </td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Estou à disposição! Tenha uma ótima noite! </td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                  <td class="textoParaCopiar">Estou à disposição! Tenha um ótimo final de semana!</td>
+                                      <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Estou à disposição! Não hesite em nos contactar!</td>
+                                        <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                      Baixar App
+                    </button>
+                  </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Você pode baixar nosso aplicativo. Seguem os links para download:
+Para usuários de Android: https://play.google.com/store/apps/details?id=com.kayroslink.app
+Para usuários de iOS: https://apps.apple.com/br/app/kayrós-link/id6449749721
+Além disso, você pode acessar nossa Central do Assinante pelo site:
+https://www.kayroslink.com.br/area-do-cliente/ 
+Seu usuário e senha será o CPF do titular sem pontos ou traços. Se tiver qualquer dúvida durante o processo, pode me chamar
+<td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 5)">Copiar</button></td>
+                                     </td>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                      SLA
+                    </button>
+                  </h2>
+                <div id="collapseEight" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Prezado Cliente,
+Estamos enfrentando um problema de infraestrutura que afeta temporariamente nossos serviços em sua região. Nossos técnicos estão empenhados em resolver a situação até o final do dia, podendo ocorrer demais interrupções. Atualizações serão disponibilizadas, e nossa equipe de suporte está à disposição.
+                                      </td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">A volta da conectividade em sua região foi confirmada. Se, porventura, a sua residência ainda não estiver restabelecida, por favor, desligue os dispositivos de rede da tomada por dois minutos e, em seguida, ligue-os novamente. Se, mesmo assim, a rede não for restaurada,me informe por gentileza. Agradecemos pela sua compreensão e paciência.</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 2)">Copiar</button></td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                      TVBox / Reconexão
+                    </button>
+                  </h2>
+                <div id="collapseNine" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Entendi. No caso, tanto o TV Box quanto o IPTV não são dispositivos homologados pela Anatel. Por essa razão, nenhum provedor de internet pode garantir estabilidade de rede para esses aparelhos. Se o travamento ocorre apenas no TV Box, é provável que haja um problema no próprio aparelho ou no servidor associado a ele. Recomendo conectar-se à internet por meio de cabo e entrar em contato com o suporte do TV Box para realizar verificações. Tudo bem?</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Muita reconexão está acontecendo; nesse sentido, sugerimos trocar a tomada por algumas horas, a fim de eliminar a possibilidade de mau funcionamento devido à tomada</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion w-100" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                      Fim do Expediente
+                    </button>
+                  </h2>
+                <div id="collapseTen" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center d-flex justify-content-center">
+                        <table class="table mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Texto</th>
+                                <th scope="col">Ação</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="textoParaCopiar">Devido a chegada do fim do meu expediente, estarei transferindo seu caso para a fila do suporte, para que outro colaborador possa auxiliar na resolução do seu problema 
+                                  </td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 1)">Copiar</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="textoParaCopiar">Devido a chegada do fim do meu expediente, estarei transferindo seu caso para a fila do suporte, para que a equipe da manhã possa auxiliar na resolução do seu problema. Tenha uma boa noite!</td>
+                                    <td><button class="botaoCopiar btn btn-outline-primary" onclick="copiarTexto(this, 4)">Copiar</button></td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+
+        </div>
+</main>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="scrollJs.js"></script>
+</html>

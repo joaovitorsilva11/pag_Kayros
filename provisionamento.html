@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Técnico</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar bg-white fixed-top">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="logotipo Kayros.png" alt="" width="150">
+            </div>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Suporte</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="pagprincipal.html"> Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Procedimentos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="los.html">LOS</a></li>
+                        <li><a class="dropdown-item" href="los.html">Sinal Alto</a></li>
+                        <li><a class="dropdown-item" href="winmtr.html">WinMTR</a></li>
+                        <li><a class="dropdown-item" href="#">Lentidão</a></li>
+                        <li><a class="dropdown-item" href="#">Roteador Resetado</a></li>
+                        <li><a class="dropdown-item" href="senhacomcamera.html">Troca de senha com câmera</a></li>
+                        <li><a class="dropdown-item" href="#">Criação de senha  provisória</a></li>
+                        <li><a class="dropdown-item" href="#">Criação de Email de rede mesh</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Provionamentos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="provisionamento.html">Kayros</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Jardim 2</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Onitel</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Jaguar</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="vlan.html">VLANs</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="script.html"> Scripts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+        <h1 class="mt-5">Passo-a-passo provisionamento Kayrós Link</h1>
+        <p>Este documento tem como intuito auxiliar os colaboradores do suporte técnico a realizar um provisionamento.</p>
+        <p>Primeiramente para realizar um provisionamento é necessário aguardar que o técnico encaminhe 3 fotos no grupo de provisionamento, entre elas:</p>
+        <ul>
+            <li> Foto do sinal interno. (residência)</li>
+            <li>Foto do sinal externo. (CTO)</li>
+            <li>Foto do serial da ONU.</li>
+        </ul>
+        <p>Um segundo ponto importante é ter ciência das normas para que um provisionamento seja aceito. Você deve se basear sempre pelo sinal externo (CTO), ao provisionar e verificar o sinal no UNM é necessário verificar se está dentro do padrão aceitável de 1,5dbm. Um exemplo:</p>
+        <p>O técnico encaminhou uma foto com o sinal da CTO em -20dbm, ao fazer o cálculo você vai
+            somar o valor aceitável com o valor da caixa, ou seja: -20dbm + -1,5dbm = -21,5dbm. Caso o
+            sinal da ONU ultrapasse, não será aceitado. No caso: 21,70dbm,21,80dbm e em sequência não
+            seriam aceitados, porém, qualquer valor abaixo seria aceitado.
+        </p>
+        <p>Para realizar o provisionamento primeiro é necessário consultar o ID do cliente informado pelo
+            técnico → ir em serviços → habilitar o serviço → copiar o nome completo do cliente → ir até a
+            opção rede → equipamentos e conexão → selecionar a OLT correspondente com o endereço
+            do cliente → ações → ver clientes conectados → Pendentes camada 2 → atualize → verifique
+            o serial da ONU.
+        </p>
+        <p>Após consultar o serial da ONU pela foto encaminhada pelo técnico e caso seja a mesma que    
+            listou, realize o seguinte procedimento: clique em ações → autorizar → selecione o modelo da
+            ONU conforme a foto (os modelos utilizados são 01A MINI, 02B BRIDGE, 02FG) → cole o nome
+            completo do cliente → selecione o serviço (ao selecionar o serviço, automaticamente o login e
+            senha do cliente será preenchido) → digite a <span style="color:rgb(183, 35, 30) ; font-weight: bold;">VLAN</span> da determinada <span style="color:rgb(183, 35, 30) ; font-weight: bold;">OLT</span> onde está sendo feito
+            o provisionamento → clique em autorizar CPE → após alguns minutos o provisionamento será
+            concluído.
+        </p>
+        <p>O provisionamento terá sido realizado, para concluir o último passo será verificar o sinal. Para
+            consultar o sinal deve ser realizado o seguinte procedimento: Copie o serial da ONU → Abra o
+            UNM → Selecione a OLT no qual aquela ONU foi provisionada → selecione a opção “ONU list”
+            → cole o serial da ONU → selecione a respectiva ONU → clique com o botão direito →
+            selecione a opção “Service Configuration” → Após isso, selecione a opção na barra lateral
+            chamada de “Opt Module Para Information” → a informação do sinal estará mostrando da
+            seguinte forma: Recive power dBm.
+        </p>
+        <p>Caso o sinal esteja de forma satisfatória, ou seja, dentro do padrão de 1,5 dBm de diferença,
+            deve ser encaminhado a foto do sinal no grupo, respondendo o ID do cliente que o técnico
+            encaminhar e informar: Sinal ok. Provisionado por ...... (nome de quem provisionou)
+        </p>
+        <h1>Mas e se caso o sinal ultrapasse a marca de 1,5 dBm? O que deve ser
+            feito?
+        </h1>
+        <p>Neste caso é necessário ser realizado um procedimento de 3 etapas a ser seguido com o
+            propósito de normalizar o problema.
+        </p>
+        <ol>
+            <li>O primeiro passo vai ser solicitar que o técnico realize uma limpeza no equipamento.</li>
+            <li>Caso após a limpeza do equipamento o sinal não tenha normalizado, solicite ao técnico
+                que refaça os conectores</li>
+            <li>E se caso o passo anterior não tenha normalizado o sinal, solicite para o técnico trocar
+                a ONU.</li>
+        </ol>
+        <h2>Termos técnicos</h2>
+        <p>Ao longo deste documento você deve ter notado alguns termos técnicos utilizados para se
+            referir aos equipamentos e sistemas de fibra óptica, nessa parte será explicado alguns termos
+            informados anteriormente para facilitar o seu entendimento sobre o assunto.</p>
+        <ul>
+            <li><span style="color:rgb(183, 35, 30) ; font-weight: bold;">OLT</span>: (Optical Line Terminal) é o equipamento responsável por gerir e distribuir o
+                acesso aos serviços de dados e streaming. Se você ainda tem dúvidas sobre o que é a
+                OLT, vamos entender algumas outras nomenclaturas que envolvem o fornecimento de
+                rede de fibra óptica e que podem ajudar nessa compreensão.
+                <p>Uma delas é o padrão FTTh – fibra até a residência (em português) fornecido através
+                do sistema PON (Redes Ópticas Passivas). Entre os equipamentos e tecnologias básicas
+                que compõem sua arquitetura está a OLT.
+                </p>
+                <p>A OLT irá centralizar e distribuir os sinais ópticos sobre fibra óptica até a chegada ao
+                    cliente, no caso uma ONU (Unidade de Rede Óptica) ou ONT (Terminal de Rede
+                    Óptica).
+                </p>
+                <p>Enquanto isso, para garantir o controle e fluxo de dados para a ONU ou ONT está a OLT,
+                    que é normalmente instalada na central operadora. A OLT, portanto, é o terminal de
+                    linha óptica responsável por converter e transmitir os dados para a rede PON.
+                    Em outras palavras, a OLT é um equipamento que fica instalado no provedor com a
+                    função de fazer a distribuição do  serviço de dados, streaming, voz, imagem e telefonia
+                    IP. Além de enviar os dados, a OLT também é responsável por receber informações de
+                    uma rede de longa distância para redistribuição.
+                </p>
+            </li>
+            <li>
+                <span style="color:rgb(183, 35, 30) ;font-weight: bold;">VLAN</span><p>A Virtual Local Area Network (VLAN) é uma rede independente que visa se
+                conectar e se comunicar a redes físicas através de domínios de broadcast. É uma forma
+                de separação lógica para melhorar a administração, o desempenho e a segurança.</p>
+                <p> Atualmente a Kayrós Link possui 4 OLT ́s, estas são: <b style="color: rgb(41, 160, 212);"> OLT SOF, OLT ESTÂNCIA, OLT VALE
+                    e OLT MARAJÓ.</b> Cada OLT possui sua VLAN na qual está vinculada a cada OLT. Se
+                    durante o provisionamento for inserido o número da VLAN incorreto a ONU irá
+                    “provisionar” porém não irá subir rede, devido a VLAN incorreta. A baixo estará o
+                    número correspondente a cada VLAN para que não tenha erro durante o
+                    provisionamento.
+                </p>
+                <li><b style="color: rgb(41, 160, 212)">OLT SOF</b><b>: 1001</b></li>
+                <li><b style="color: rgb(41, 160, 212)">OLT VALE</b><b>: 1101</b></li>
+                <li><b style="color: rgb(41, 160, 212)">OLT ESTANCIA</b><b>: 1007</b></li>
+                <li><b style="color: rgb(41, 160, 212)">OLT MARAJÓ</b><b>: 1024</b></li>
+                <li><b style="color: rgb(41, 160, 212)">OLT JARDIM</b><b>: 1028</b></li>
+            </li>
+            <br>
+            <li><span style="color:rgb(183, 35, 30) ;font-weight: bold;">ONU</span> <p>ONU é uma tecnologia cuja sigla significa Optical Network Unit e é uma rede de
+                fibra óptica que possui a capacidade de converter um sinal OLT em sinal elétrico,
+                distribuindo para outros canais de transmissão do serviço.
+                </p>
+                <p>Atualmente a Kayrós Link possui alguns modelos padrões de ONU ́s que são utilizadas,
+                    dentre estes modelos se destacam os seguintes:<b style="color: rgb(41, 160, 212)">01-A MINI, 02B-BRIDGE, 02-FG e 02-B
+                    ROUTER.</b> O modelo de cada ONU citada tem o seu propósito, entre eles:
+                </p>
+                
+                <p><b style="color: rgb(41, 160, 212)">01-A MINI:</b> Este é o modelo padrão que será utilizado em grande maioria dos
+                    provisionamentos.</p>
+                <p><b style="color: rgb(41, 160, 212)">02B-BRIDGE:</b> Este modelo é responsável por ser utilizado em ativações onde o cliente
+                    vai aderir telefonia, o que difere este modelo 02B do modelo 01-A é que este modelo
+                    possui uma entrada específica para telefonia.</p>
+                <p><b style="color: rgb(41, 160, 212)">02-FG:</b> Este modelo é utilizado de forma ROUTER, ou seja, este modelo atua como uma
+                    ONU e roteador em um só. Este modelo não é utilizado nos dias atuais, porém pode
+                    haver algum cliente com um plano antigo que utilize este modelo.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="scrollJs.js"></script>
+</html>
+</html>

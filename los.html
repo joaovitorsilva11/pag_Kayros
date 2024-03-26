@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Técnico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        .passo {
+            border: 2px solid #08A3C6;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .passo h3 {
+            margin-bottom: 10px;
+        }
+
+        .passo .descricao {
+            margin-bottom: 10px;
+        }
+        .finalizacao {
+            border: 2px solid #B51A1A;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #dd1515;
+            color: white;
+        }
+        .finalizacao h3 {
+            color: black; /* H3 preto */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-white fixed-top">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="logotipo Kayros.png" alt="" width="150">
+            </div>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Suporte</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="pagprincipal.html"> Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Procedimentos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="los.html">LOS</a></li>
+                        <li><a class="dropdown-item" href="los.html">Sinal Alto</a></li>
+                        <li><a class="dropdown-item" href="winmtr.html">WinMTR</a></li>
+                        <li><a class="dropdown-item" href="#">Lentidão</a></li>
+                        <li><a class="dropdown-item" href="#">Roteador Resetado</a></li>
+                        <li><a class="dropdown-item" href="senhacomcamera.html">Troca de senha com câmera</a></li>
+                        <li><a class="dropdown-item" href="#">Criação de senha  provisória</a></li>
+                        <li><a class="dropdown-item" href="#">Criação de Email de rede mesh</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Provionamentos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="provisionamento.html">Kayros</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Jardim 2</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Onitel</a></li>
+                    <li><a class="dropdown-item" href="vlan.html">Jaguar</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="vlan.html">VLANs</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="script.html"> Scripts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+<div class="container text-center">
+    <div class="container">
+        <div class="logo d-flex align-items-center">
+            <img src="logotipo Kayros.png" alt="" width="150">
+        </div>
+    </div>
+    <h1 class="mt-5 mb-4">Identificação de ONU em estado de LOS ou com sinal alto</h1>
+
+    <div class="alert alert-info" role="alert">
+        <strong>Atenção:</strong> Siga os passos abaixo para identificar o estado da ONU.
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+            <div class="passo">
+                <h3>Passo 1</h3>
+                <div class="descricao">
+                    <p>Há uma luz vermelha na ONU? <br> Se sim, <br>➡️</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="passo">
+                <h3>Passo 2</h3>
+                <div class="descricao">
+                    <p>Copie o serial da ONU do cliente, acesse o UNM, vá para a VLAN do cliente, acesse a ONU List, cole o serial e se estiver em LINK LOSS, o cliente está com LOS.<br>➡️</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="passo">
+                <h3>Passo 3</h3>
+                <div class="descricao">
+                    <p>Filtre o problema para identificar melhor o que ocasionou o LOS. Se foi por algum descuido do cliente ou se de fato foi algo externo.<br>➡️</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="finalizacao">
+                <h3>Passo 4</h3>
+                <div class="descricao">
+                    <p>Agende a visita técnica, levando em consideração o técnico adequado para este tipo de ordem de serviço e localidade, a fim de resolver o problema. <br>👷‍♂️</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-info" role="alert">
+        <strong>Atenção:</strong> Siga os passos abaixo para identificar se o cliente está com sinal alto.
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+            <div class="passo">
+                <h3>Passo 1</h3>
+                <div class="descricao">
+                    <p>Há uma luz vermelha na ONU? <br> Se não, <br>➡️</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="passo">
+                <h3>Passo 2</h3>
+                <div class="descricao">
+                    <p>A ONU está piscando a luz do PON? <br>Se sim, <br>➡️</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="passo">
+                <h3>Passo 3</h3>
+                <div class="descricao">
+                    <p>Copie o serial da ONU do cliente, acesse no UNM, vá para a VLAN do cliente, vá em ONU List, cole o serial e clique nela com o botão direito do mouse. Verifique o sinal em 'Opt Module'. Se estiver alto e o perfil do cliente alertar sobre sinal alto, o cliente está com sinal alto.<br>➡️</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="finalizacao">
+                <h3>Passo 4</h3>
+                <div class="descricao">
+                    <p>Agende a visita técnica, levando em consideração o técnico adequado para este tipo de ordem de serviço e localidade, a fim de resolver o problema.<br>👷‍♂️</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="scrollJs.js"></script>
+</html>
